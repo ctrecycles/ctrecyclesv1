@@ -1,0 +1,2571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CT Plastic Recycling Industry Pvt. Ltd. - Premium Recycled Plastic Products</title>
+    <meta name="description" content="Leading plastic recycling company in Bardiya, Nepal. High-quality recycled PET plastic pellets, flakes, and bottle preforms at competitive prices.">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* ===== GLOBAL STYLES ===== */
+        :root {
+            /* Updated color scheme with better contrast */
+            --primary: #2E8B57;       /* Main brand green */
+            --primary-light: #3CB371; /* Lighter green */
+            --primary-dark: #228B22;  /* Darker green */
+            --secondary: #FFD700;     /* Accent gold */
+            --accent: #20B2AA;       /* Teal accent */
+            --dark: #2F4F4F;         /* Dark text */
+            --light: #F5F5F5;        /* Light background */
+            --white: #FFFFFF;        /* Pure white */
+            --gray: #778899;         /* Medium gray */
+            --gray-light: #E6E6FA;   /* Light gray/lavender */
+            
+            /* Updated transitions with smoother timing functions */
+            --transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            
+            /* More subtle shadows for modern look */
+            --shadow-sm: 0 1px 3px rgba(0,0,0,0.08);
+            --shadow-md: 0 4px 6px rgba(0,0,0,0.1);
+            --shadow-lg: 0 10px 15px rgba(0,0,0,0.1);
+            --shadow-xl: 0 20px 25px rgba(0,0,0,0.1);
+            
+            /* Border radius */
+            --border-radius: 12px;
+            --border-radius-lg: 20px;
+            --border-radius-xl: 30px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            /* Better font rendering */
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.7;
+            color: var(--dark);
+            background: var(--white);
+            overflow-x: hidden;
+        }
+
+        /* Typography */
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 1.5rem;
+        }
+
+        p {
+            margin-bottom: 1.5rem;
+            color: var(--gray);
+            font-size: 1.05rem;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: var(--transition);
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            /* Prevent image distortion */
+            object-fit: cover;
+        }
+
+        /* Layout */
+        .container {
+            width: 100%;
+            max-width: 1320px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        .section {
+            padding: 120px 0;
+            position: relative;
+            /* Prevent margin collapse */
+            overflow: hidden;
+        }
+
+        .section-title {
+            position: relative;
+            display: inline-block;
+            margin-bottom: 3rem;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -12px;
+            left: 0;
+            width: 60px;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary), var(--accent));
+            border-radius: 2px;
+            /* Smooth width animation */
+            transition: width 0.4s ease;
+        }
+
+        .section-title:hover::after {
+            width: 80px;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .text-center .section-title::after {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        /* ===== BUTTONS ===== */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 14px 28px;
+            border-radius: var(--border-radius-xl);
+            font-weight: 600;
+            transition: var(--transition);
+            text-align: center;
+            gap: 10px;
+            font-size: 1rem;
+            border: none;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+            /* Better button text rendering */
+            -webkit-font-smoothing: subpixel-antialiased;
+            /* Hardware acceleration */
+            transform: translateZ(0);
+        }
+
+        .btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, var(--primary), var(--primary-light));
+            z-index: -1;
+            transition: var(--transition);
+            opacity: 1;
+            /* Smooth gradient transition */
+            background-size: 200% 200%;
+        }
+
+        .btn:hover::before {
+            opacity: 0.9;
+            /* Subtle gradient animation */
+            background-position: 100% 100%;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--primary), var(--primary-light));
+            color: var(--white);
+            box-shadow: var(--shadow-md);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .btn-outline {
+            border: 2px solid var(--primary);
+            color: var(--primary);
+            background: transparent;
+            box-shadow: none;
+        }
+
+        .btn-outline::before {
+            background: var(--primary);
+            opacity: 0;
+        }
+
+        .btn-outline:hover {
+            color: var(--white);
+            border-color: var(--primary);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .btn-outline:hover::before {
+            opacity: 1;
+        }
+
+        /* Button sizes */
+        .btn-lg {
+            padding: 18px 36px;
+            font-size: 1.1rem;
+        }
+
+        .btn-icon {
+            width: 40px;
+            height: 40px;
+            padding: 0;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* ===== HEADER ===== */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            background: rgba(255, 255, 255, 0.95);
+            color: var(--dark);
+            padding: 1.2rem 0;
+            box-shadow: var(--shadow-sm);
+            backdrop-filter: blur(10px);
+            transition: var(--transition);
+            /* Prevent repaints on scroll */
+            will-change: transform;
+        }
+
+        header.scrolled {
+            padding: 0.8rem 0;
+            box-shadow: var(--shadow-md);
+            background: rgba(255, 255, 255, 0.98);
+            /* More pronounced scroll effect */
+            transform: translateY(-5px);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: var(--primary);
+            /* Prevent logo shift on hover */
+            padding: 5px 0;
+        }
+
+        .logo i {
+            color: var(--accent);
+            font-size: 2rem;
+            /* Smooth color transition */
+            transition: var(--transition);
+        }
+
+        .logo:hover i {
+            transform: rotate(-15deg);
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2.5rem;
+        }
+
+        .nav-links a {
+            font-weight: 500;
+            font-size: 1.1rem;
+            position: relative;
+            padding: 0.5rem 0;
+            color: var(--dark);
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--primary);
+            transition: var(--transition);
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+
+        .mobile-menu {
+            display: none;
+            font-size: 1.8rem;
+            cursor: pointer;
+            transition: var(--transition);
+            color: var(--dark);
+            z-index: 1001;
+            /* Prevent layout shift */
+            width: 30px;
+            text-align: center;
+        }
+
+        .mobile-menu:hover {
+            color: var(--primary);
+            transform: scale(1.1);
+        }
+
+        /* ===== HERO SECTION ===== */
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://i0.wp.com/www.sciencenews.org/wp-content/uploads/2021/01/013021_plastics_feat.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            height: 100vh;
+            min-height: 800px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: var(--white);
+            padding-top: 80px;
+            position: relative;
+            /* Optimize background rendering */
+            background-repeat: no-repeat;
+            background-blend-mode: multiply;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(46, 139, 87, 0.3), rgba(32, 178, 170, 0.3));
+            z-index: 0;
+            /* Subtle gradient animation */
+            animation: gradientShift 15s ease infinite alternate;
+        }
+
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            100% { background-position: 100% 50%; }
+        }
+
+        .hero-content {
+            max-width: 900px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-content h1 {
+            font-size: 4.5rem;
+            margin-bottom: 1.8rem;
+            background: linear-gradient(135deg, var(--white), var(--accent));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            line-height: 1.1;
+            /* Combined animations */
+            animation: fadeIn 1s ease-out forwards, float 6s ease-in-out infinite 1s;
+        }
+
+        .hero-content p {
+            font-size: 1.4rem;
+            margin-bottom: 3rem;
+            color: rgba(255,255,255,0.9);
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            /* Staggered animation */
+            animation: fadeIn 1s ease-out 0.3s forwards;
+        }
+
+        .hero-actions {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            /* Staggered animation */
+            animation: fadeIn 1s ease-out 0.6s forwards;
+        }
+
+        .scroll-down {
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: var(--white);
+            font-size: 1.5rem;
+            animation: bounce 2s infinite, pulse 2s infinite;
+            cursor: pointer;
+            /* Smooth animation */
+            will-change: transform, opacity;
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateY(0) translateX(-50%); }
+            40% { transform: translateY(-15px) translateX(-50%); }
+            60% { transform: translateY(-7px) translateX(-50%); }
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.6; }
+        }
+
+        /* ===== ABOUT SECTION ===== */
+        .about {
+            background: var(--white);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .about::before {
+            content: '';
+            position: absolute;
+            top: -100px;
+            right: -100px;
+            width: 300px;
+            height: 300px;
+            background: var(--primary-light);
+            opacity: 0.1;
+            border-radius: 50%;
+            z-index: 0;
+            /* Floating animation */
+            animation: float 15s ease-in-out infinite alternate;
+        }
+
+        .about::after {
+            content: '';
+            position: absolute;
+            bottom: -150px;
+            left: -150px;
+            width: 400px;
+            height: 400px;
+            background: var(--accent);
+            opacity: 0.1;
+            border-radius: 50%;
+            z-index: 0;
+            /* Floating animation */
+            animation: float 18s ease-in-out infinite alternate-reverse;
+        }
+
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .about-text h2 {
+            font-size: 3rem;
+            margin-bottom: 1.8rem;
+            color: var(--dark);
+        }
+
+        .about-text p {
+            font-size: 1.1rem;
+            color: var(--gray);
+            line-height: 1.8;
+            margin-bottom: 2rem;
+        }
+
+        .about-stats {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .stat-item {
+            background: var(--light);
+            padding: 1.5rem;
+            border-radius: var(--border-radius);
+            text-align: center;
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition);
+            /* Performance optimization */
+            will-change: transform;
+        }
+
+        .stat-item:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .stat-item h3 {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+            /* Counter animation */
+            transition: all 1s ease-out;
+        }
+
+        .stat-item:hover h3 {
+            color: var(--accent);
+        }
+
+        .stat-item p {
+            margin: 0;
+            font-size: 1rem;
+            color: var(--gray);
+        }
+
+        .about-image {
+            position: relative;
+            border-radius: var(--border-radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow-xl);
+            transform: perspective(1000px) rotateY(-5deg);
+            transition: var(--transition);
+            /* 3D effect optimization */
+            transform-style: preserve-3d;
+            backface-visibility: hidden;
+        }
+
+        .about-image:hover {
+            transform: perspective(1000px) rotateY(0deg);
+        }
+
+        .about-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.8s ease;
+        }
+
+        .about-image:hover img {
+            transform: scale(1.05);
+        }
+
+        /* ===== PRODUCTS SECTION ===== */
+        .products {
+            background: var(--light);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .products::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: -150px;
+            width: 300px;
+            height: 300px;
+            background: var(--accent);
+            opacity: 0.1;
+            border-radius: 50%;
+            z-index: 0;
+            /* Floating animation */
+            animation: float 12s ease-in-out infinite alternate;
+        }
+
+        .products h2 {
+            position: relative;
+            z-index: 1;
+        }
+
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2.5rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .product-card {
+            background: var(--white);
+            border-radius: var(--border-radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+            transition: var(--transition);
+            position: relative;
+            /* Performance optimization */
+            will-change: transform;
+            backface-visibility: hidden;
+            transform: translateZ(0);
+        }
+
+        .product-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to bottom, transparent, rgba(0,0,0,0.7));
+            z-index: 1;
+            opacity: 0;
+            transition: var(--transition);
+        }
+
+        .product-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-xl);
+        }
+
+        .product-card:hover::before {
+            opacity: 1;
+        }
+
+        .product-image {
+            height: 280px;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            overflow: hidden;
+            /* Smooth image loading */
+            background-color: #f0f0f0;
+        }
+
+        .product-content {
+            padding: 2.5rem;
+            position: relative;
+            z-index: 2;
+        }
+
+        .product-content h3 {
+            font-size: 1.7rem;
+            margin-bottom: 1.2rem;
+            color: var(--dark);
+        }
+
+        .product-content p {
+            color: var(--gray);
+            margin-bottom: 1.8rem;
+            line-height: 1.8;
+        }
+
+        .product-badge {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: var(--primary);
+            color: var(--white);
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            z-index: 3;
+            /* Bounce animation */
+            animation: bounceIn 0.6s ease;
+        }
+
+        /* ===== FEATURES SECTION ===== */
+        .features {
+            background: linear-gradient(135deg, var(--dark), #3a5a5a);
+            color: var(--white);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .features::before {
+            content: '';
+            position: absolute;
+            top: -100px;
+            left: -100px;
+            width: 300px;
+            height: 300px;
+            background: var(--accent);
+            opacity: 0.1;
+            border-radius: 50%;
+            z-index: 0;
+            /* Floating animation */
+            animation: float 14s ease-in-out infinite alternate;
+        }
+
+        .features h2 {
+            position: relative;
+            z-index: 1;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2.5rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .feature-card {
+            text-align: center;
+            padding: 3rem 2rem;
+            background: rgba(255, 255, 255, 0.08);
+            border-radius: var(--border-radius-lg);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+            /* Performance optimization */
+            will-change: transform, box-shadow;
+        }
+
+        .feature-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(90deg, var(--primary), var(--accent));
+            transition: var(--transition);
+            opacity: 0;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+            background: rgba(255, 255, 255, 0.12);
+        }
+
+        .feature-card:hover::before {
+            opacity: 1;
+        }
+
+        .feature-icon {
+            font-size: 3.5rem;
+            color: var(--accent);
+            margin-bottom: 1.5rem;
+            transition: var(--transition);
+            display: inline-block;
+            /* Rotation animation */
+            transform: rotate(0deg);
+        }
+
+        .feature-card:hover .feature-icon {
+            transform: scale(1.1) rotate(5deg);
+            color: var(--white);
+        }
+
+        .feature-card h3 {
+            font-size: 1.6rem;
+            margin-bottom: 1.2rem;
+            color: var(--white);
+        }
+
+        .feature-card p {
+            color: rgba(255,255,255,0.8);
+            line-height: 1.8;
+        }
+
+        /* ===== CONTACT SECTION ===== */
+        .contact {
+            background: var(--light);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .contact::before {
+            content: '';
+            position: absolute;
+            top: -100px;
+            left: -100px;
+            width: 300px;
+            height: 300px;
+            background: var(--accent);
+            opacity: 0.1;
+            border-radius: 50%;
+            z-index: 0;
+            /* Floating animation */
+            animation: float 16s ease-in-out infinite alternate-reverse;
+        }
+
+        .contact h2 {
+            position: relative;
+            z-index: 1;
+        }
+
+        .contact h3 {
+            font-size: 1.4rem;
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 14px;
+        }
+
+        .contact h3 i {
+            color: var(--primary);
+            /* Icon animation */
+            transition: var(--transition);
+        }
+
+        .contact h3:hover i {
+            transform: rotate(15deg);
+        }
+
+        .contact-info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 4rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 1.2rem;
+            background: var(--white);
+            padding: 2rem;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow-md);
+            border-left: 4px solid var(--primary);
+            transition: var(--transition);
+            min-height: 100px;
+            /* Performance optimization */
+            will-change: transform;
+        }
+
+        .contact-item:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+            border-left-color: var(--accent);
+        }
+
+        .contact-item i {
+            font-size: 2rem;
+            color: var(--primary);
+            flex-shrink: 0;
+            line-height: 1;
+            /* Icon animation */
+            transition: var(--transition);
+        }
+
+        .contact-item:hover i {
+            transform: scale(1.1);
+        }
+
+        .contact-item div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .contact-item p {
+            margin: 0;
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+
+        .contact-item a {
+            color: var(--primary);
+            transition: var(--transition);
+        }
+
+        .contact-item a:hover {
+            color: var(--accent);
+            text-decoration: underline;
+        }
+
+        /* Order Form */
+        .order-form-container {
+            background: var(--white);
+            padding: 3.5rem;
+            border-radius: var(--border-radius-lg);
+            box-shadow: var(--shadow-xl);
+            border-top: 4px solid var(--primary);
+            position: relative;
+            z-index: 1;
+            transition: var(--transition);
+            /* Form performance */
+            will-change: box-shadow;
+        }
+
+        .order-form-container:hover {
+            box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+            position: relative;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.6rem;
+            font-weight: 600;
+            color: var(--dark);
+            /* Smooth transition for error states */
+            transition: color 0.3s ease;
+        }
+
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 14px 18px;
+            border: 2px solid var(--gray-light);
+            border-radius: var(--border-radius);
+            background: var(--light);
+            color: var(--dark);
+            font-size: 1rem;
+            transition: var(--transition);
+            font-family: 'Poppins', sans-serif;
+            /* Better input rendering */
+            -webkit-appearance: none;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: var(--primary);
+            background: var(--white);
+            box-shadow: 0 0 0 4px rgba(46, 139, 87, 0.15);
+        }
+
+        .form-group textarea {
+            height: 150px;
+            resize: vertical;
+            /* Smooth resizing */
+            transition: height 0.3s ease;
+        }
+
+        .form-group.error input,
+        .form-group.error select,
+        .form-group.error textarea {
+            border-color: #ef4444;
+            background: #fef2f2;
+        }
+
+        .form-group.error label {
+            color: #ef4444;
+        }
+
+        .error-message {
+            color: #ef4444;
+            font-size: 0.85rem;
+            margin-top: 0.5rem;
+            /* Animated error message */
+            max-height: 0;
+            overflow: hidden;
+            opacity: 0;
+            transition: max-height 0.3s ease, opacity 0.3s ease;
+        }
+
+        .form-group.error .error-message {
+            max-height: 50px;
+            opacity: 1;
+        }
+
+        /* Product Selection */
+        .product-selection {
+            background: linear-gradient(135deg, #f0fdf4, #e0f7e9);
+            padding: 2rem;
+            border-radius: var(--border-radius);
+            margin: 2rem 0;
+            border: 1px solid rgba(46, 139, 87, 0.2);
+            position: relative;
+            overflow: hidden;
+            /* Smooth expansion */
+            transition: padding 0.3s ease;
+        }
+
+        .product-selection::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 5px;
+            height: 100%;
+            background: linear-gradient(to bottom, var(--primary), var(--accent));
+            /* Animated gradient */
+            animation: gradientFlow 3s ease infinite;
+            background-size: 100% 200%;
+        }
+
+        @keyframes gradientFlow {
+            0% { background-position: 0% 0%; }
+            50% { background-position: 0% 100%; }
+            100% { background-position: 0% 0%; }
+        }
+
+        .product-selection h4 {
+            margin-bottom: 1.5rem;
+            color: var(--dark);
+            font-size: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .product-selection h4 i {
+            color: var(--primary);
+            /* Icon animation */
+            transition: var(--transition);
+        }
+
+        .product-selection:hover h4 i {
+            transform: rotate(15deg);
+        }
+
+        .product-item {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: var(--border-radius);
+            margin-bottom: 1.5rem;
+            border-left: 4px solid var(--primary);
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition);
+            /* Performance optimization */
+            will-change: transform;
+        }
+
+        .product-item:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .add-product-btn {
+            background: linear-gradient(135deg, var(--primary), var(--primary-light));
+            color: var(--white);
+            padding: 12px 24px;
+            border: none;
+            border-radius: var(--border-radius-xl);
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin: 0 auto;
+            box-shadow: var(--shadow-sm);
+            /* Button animation */
+            transform: translateZ(0);
+        }
+
+        .add-product-btn:hover {
+            transform: translateY(-3px) scale(1.02);
+            box-shadow: var(--shadow-md);
+            background: linear-gradient(135deg, var(--primary-dark), var(--primary));
+        }
+
+        .remove-product {
+            background: #ef4444;
+            color: var(--white);
+            padding: 10px 18px;
+            border: none;
+            border-radius: var(--border-radius-xl);
+            cursor: pointer;
+            font-size: 0.9rem;
+            margin-top: 1rem;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            box-shadow: var(--shadow-sm);
+            /* Button animation */
+            transform: translateZ(0);
+        }
+
+        .remove-product:hover {
+            background: #dc2626;
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-md);
+        }
+
+        /* Form Actions */
+        .form-actions {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            margin-top: 2.5rem;
+        }
+
+        .submit-btn {
+            background: linear-gradient(135deg, var(--primary), var(--primary-light));
+            color: var(--white);
+            padding: 16px 32px;
+            border: none;
+            border-radius: var(--border-radius-xl);
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 1.1rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            transition: var(--transition);
+            box-shadow: var(--shadow-md);
+            /* Button animation */
+            transform: translateZ(0);
+        }
+
+        .submit-btn:hover {
+            transform: translateY(-4px) scale(1.02);
+            box-shadow: var(--shadow-lg);
+            background: linear-gradient(135deg, var(--primary-dark), var(--primary));
+        }
+
+        .quote-btn {
+            background: linear-gradient(135deg, #17a2b8, #138496);
+            color: var(--white);
+            padding: 16px 32px;
+            border: none;
+            border-radius: var(--border-radius-xl);
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 1.1rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            transition: var(--transition);
+            box-shadow: var(--shadow-md);
+            /* Button animation */
+            transform: translateZ(0);
+        }
+
+        .quote-btn:hover {
+            transform: translateY(-4px) scale(1.02);
+            box-shadow: var(--shadow-lg);
+            background: linear-gradient(135deg, #138496, #117a8b);
+        }
+
+        /* Quick Contact */
+        .quick-contact {
+            background: var(--white);
+            padding: 3rem;
+            border-radius: var(--border-radius-lg);
+            box-shadow: var(--shadow-xl);
+            border-top: 4px solid var(--accent);
+            margin-top: 4rem;
+            position: relative;
+            z-index: 1;
+            transition: var(--transition);
+            /* Performance optimization */
+            will-change: box-shadow;
+        }
+
+        .quick-contact:hover {
+            box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+        }
+
+        .mandatory-note {
+            font-size: 0.9rem;
+            color: var(--gray);
+            margin-top: 1rem;
+            text-align: center;
+        }
+
+        /* Success Message */
+        .success-message {
+            display: none;
+            background: #d1fae5;
+            color: #065f46;
+            padding: 1.5rem;
+            border-radius: var(--border-radius);
+            margin-bottom: 2rem;
+            text-align: center;
+            animation: fadeIn 0.5s ease, bounceIn 0.6s ease;
+            border-left: 4px solid #10b981;
+            /* Message animation */
+            will-change: transform, opacity;
+        }
+
+        /* ===== FOOTER ===== */
+        footer {
+            background: linear-gradient(135deg, var(--dark), #2a4a4a);
+            color: var(--white);
+            text-align: center;
+            padding: 4rem 0 2rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        footer::before {
+            content: '';
+            position: absolute;
+            bottom: -100px;
+            right: -100px;
+            width: 300px;
+            height: 300px;
+            background: var(--accent);
+            opacity: 0.1;
+            border-radius: 50%;
+            z-index: 0;
+            /* Floating animation */
+            animation: float 14s ease-in-out infinite alternate-reverse;
+        }
+
+        .footer-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 1.5rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .footer-logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: var(--white);
+        }
+
+        .footer-logo i {
+            color: var(--accent);
+            font-size: 2rem;
+            /* Icon animation */
+            transition: var(--transition);
+        }
+
+        .footer-logo:hover i {
+            transform: rotate(-15deg);
+        }
+
+        .footer-contact {
+            font-size: 1.1rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .footer-contact a {
+            color: var(--accent);
+            text-decoration: none;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .footer-contact a:hover {
+            color: var(--white);
+            transform: translateX(5px);
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1.5rem;
+            margin: 1.5rem 0;
+        }
+
+        .social-links a {
+            color: var(--white);
+            font-size: 1.5rem;
+            transition: var(--transition);
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(255, 255, 255, 0.1);
+            /* Social icon animation */
+            transform: translateZ(0);
+        }
+
+        .social-links a:hover {
+            color: var(--accent);
+            transform: translateY(-3px) scale(1.1);
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 2rem;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .footer-links a {
+            color: rgba(255,255,255,0.8);
+            transition: var(--transition);
+        }
+
+        .footer-links a:hover {
+            color: var(--accent);
+            text-decoration: underline;
+        }
+
+        .copyright {
+            color: rgba(255,255,255,0.7);
+            font-size: 0.9rem;
+            margin-top: 2rem;
+        }
+
+        /* ===== ANIMATIONS ===== */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-60px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        @keyframes bounceIn {
+            0% { transform: scale(0.95); opacity: 0; }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); opacity: 1; }
+        }
+
+        /* ===== UTILITY CLASSES ===== */
+        .animate {
+            opacity: 0;
+            animation: fadeIn 1s ease forwards;
+            /* Performance optimization */
+            will-change: opacity;
+        }
+
+        .animate-up {
+            opacity: 0;
+            transform: translateY(30px);
+            animation: slideUp 0.8s ease forwards;
+            /* Performance optimization */
+            will-change: transform, opacity;
+        }
+
+        .animate-left {
+            opacity: 0;
+            transform: translateX(-50px);
+            animation: fadeInLeft 0.8s ease forwards;
+            /* Performance optimization */
+            will-change: transform, opacity;
+        }
+
+        .delay-1 { animation-delay: 0.1s; }
+        .delay-2 { animation-delay: 0.2s; }
+        .delay-3 { animation-delay: 0.3s; }
+        .delay-4 { animation-delay: 0.4s; }
+        .delay-5 { animation-delay: 0.5s; }
+
+        .float {
+            animation: float 4s ease-in-out infinite;
+            /* Performance optimization */
+            will-change: transform;
+        }
+
+        /* ===== RESPONSIVE DESIGN ===== */
+        @media (max-width: 1200px) {
+            .hero-content h1 {
+                font-size: 3.8rem;
+            }
+            
+            .about-content {
+                gap: 3rem;
+            }
+        }
+
+        @media (max-width: 992px) {
+            .section {
+                padding: 100px 0;
+            }
+            
+            .hero {
+                min-height: 700px;
+            }
+            
+            .hero-content h1 {
+                font-size: 3.2rem;
+            }
+            
+            .hero-content p {
+                font-size: 1.2rem;
+            }
+            
+            .about-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+                gap: 2rem;
+            }
+            
+            .about-image {
+                max-width: 600px;
+                margin: 0 auto;
+                transform: none !important;
+            }
+            
+            .about-stats {
+                max-width: 500px;
+                margin: 2rem auto 0;
+            }
+            
+            .features-grid, .products-grid {
+                grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                position: fixed;
+                top: 0;
+                left: -100%;
+                width: 80%;
+                height: 100vh;
+                background: var(--white);
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: flex-start;
+                gap: 1.5rem;
+                transition: transform 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+                padding: 100px 40px 40px;
+                box-shadow: 40px 0 80px rgba(0,0,0,0.2);
+                z-index: 1000;
+            }
+
+            .nav-links.active {
+                left: 0;
+                transform: translateX(0);
+            }
+
+            .nav-links a {
+                color: var(--dark);
+                font-size: 1.2rem;
+                padding: 0.5rem 0;
+            }
+
+            .mobile-menu {
+                display: block;
+            }
+            
+            .hero {
+                padding-top: 100px;
+                height: auto;
+                min-height: auto;
+                padding-bottom: 80px;
+                background-attachment: scroll;
+            }
+            
+            .hero-content h1 {
+                font-size: 2.8rem;
+            }
+            
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+            
+            .form-actions {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .submit-btn, .quote-btn {
+                width: 100%;
+                max-width: 350px;
+            }
+
+            .footer-contact {
+                flex-direction: column;
+                gap: 1rem;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .section {
+                padding: 80px 0;
+            }
+            
+            .hero-content h1 {
+                font-size: 2.4rem;
+            }
+            
+            .hero-content p {
+                font-size: 1.1rem;
+            }
+            
+            .hero-actions {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .btn {
+                width: 100%;
+                max-width: 300px;
+            }
+            
+            .contact-info-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .order-form-container, .quick-contact {
+                padding: 2rem;
+            }
+
+            .product-selection {
+                padding: 1.5rem;
+            }
+
+            .product-item {
+                padding: 1.5rem;
+            }
+
+            .footer-links {
+                flex-direction: column;
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <nav class="container">
+            <a href="#" class="logo">
+                <i class="fas fa-recycle"></i>
+                CT Plastic Recycling Industry Pvt. Ltd.
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="mobile-menu" id="mobileMenu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content animate-up delay-1">
+                <h1>Transforming Waste into Sustainable Solutions</h1>
+                <p>CT Plastic Recycling Industry Pvt. Ltd. is Nepal's leading plastic recycling company, producing premium quality recycled PET products while protecting our environment for future generations.</p>
+                <div class="hero-actions">
+                    <a href="#products" class="btn btn-primary btn-lg" aria-label="View Our Products">
+                        <span>Our Products</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#contact" class="btn btn-outline btn-lg" aria-label="Contact Us">
+                        <span>Contact Us</span>
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <a href="#about" class="scroll-down" aria-label="Scroll down">
+            <i class="fas fa-chevron-down"></i>
+        </a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text animate-left delay-2">
+                    <h2 class="section-title">About Our Company</h2>
+                    <p>Founded in Bardiya, Nepal, CT Plastic Recycling Industry Pvt. Ltd. has grown from a small recycling facility to a leading manufacturer of high-quality recycled plastic products. Our commitment to sustainability drives every aspect of our business.</p>
+                    <p>We specialize in transforming post-consumer PET plastic waste into valuable raw materials including plastic flakes, pellets, and bottle preforms. Our state-of-the-art processing facility utilizes advanced European technology to ensure consistent quality that meets international standards.</p>
+                    <p>With over a decade of experience in plastic recycling, we've developed proprietary processes that allow us to deliver superior products at competitive prices while minimizing environmental impact.</p>
+                    
+                    <div class="about-stats">
+                        <div class="stat-item animate delay-3">
+                            <h3>10+</h3>
+                            <p>Years Experience</p>
+                        </div>
+                        <div class="stat-item animate delay-4">
+                            <h3>500+</h3>
+                            <p>Clients Served</p>
+                        </div>
+                        <div class="stat-item animate delay-3">
+                            <h3>1000+</h3>
+                            <p>Tons Recycled</p>
+                        </div>
+                        <div class="stat-item animate delay-4">
+                            <h3>24/7</h3>
+                            <p>Customer Support</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image animate delay-3">
+                    <img src="https://www.recyclemachine.net/wp-content/uploads/2024/08/500-kgh-pet-bottle-recycling-washing-line-guide-and-price.webp" alt="Recycling facility">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products section">
+        <div class="container">
+            <h2 class="section-title text-center animate">Our Premium Products</h2>
+            <p class="text-center animate delay-1" style="max-width: 800px; margin: 0 auto 3rem;">We offer a comprehensive range of recycled plastic products tailored to meet diverse industrial needs while promoting environmental sustainability.</p>
+            
+            <div class="products-grid">
+                <div class="product-card animate delay-2">
+                    <div class="product-badge">Best Seller</div>
+                    <div class="product-image" style="background-image: url('https://image.made-in-china.com/318f0j00jakfehStqDuQ/%E4%BD%A9%E6%B5%A6%E9%AB%98%E5%88%86%E5%AD%90%E7%A7%91%E6%8A%80%E6%97%A5%E5%B8%B8%E8%BF%90%E8%90%A5%E7%B2%BE%E8%8B%B9%E7%BE%A43.202023-04-0416.29.37.mp4.webp');"></div>
+                    <div class="product-content">
+                        <h3>Recycled PET Plastic Flakes</h3>
+                        <p>High-quality PET plastic flakes processed from recycled bottles. Perfect for manufacturing new plastic products with excellent clarity and durability. Available in various purity grades to suit different applications.</p>
+                        <a href="#contact" class="btn btn-outline">Request Quote</a>
+                    </div>
+                </div>
+
+                <div class="product-card animate delay-3">
+                    <div class="product-badge">Best Seller</div>
+                    <div class="product-image" style="background-image: url('https://easyfairsassets.com/sites/77/2024/10/Photo-09-07-2024-16-01-52.jpg');"></div>
+                    <div class="product-content">
+                        <h3>Recycled PET Plastic Pellets</h3>
+                        <p>Premium grade PET pellets ready for injection molding and manufacturing. Consistent quality and purity for reliable production processes. Ideal for food-grade and non-food applications.</p>
+                        <a href="#contact" class="btn btn-outline">Request Quote</a>
+                    </div>
+                </div>
+
+                <div class="product-card animate delay-4">
+                    <div class="product-badge">Customizable</div>
+                    <div class="product-image" style="background-image: url('https://s.alicdn.com/@sc04/kf/H781cfff9e0d949bd94e5fca475907c2eh.jpg_300x300.jpg');"></div>
+                    <div class="product-content">
+                        <h3>PET Bottle Preforms</h3>
+                        <p>Ready-to-use PET bottle preforms manufactured from recycled materials. Available in various sizes and specifications for different applications. Custom formulations available upon request.</p>
+                        <a href="#contact" class="btn btn-outline">Request Quote</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features section">
+        <div class="container">
+            <h2 class="section-title text-center animate">Why Choose CT Plastic Recycling Industry Pvt. Ltd.?</h2>
+            <p class="text-center animate delay-1" style="max-width: 800px; margin: 0 auto 4rem; color: rgba(255,255,255,0.8);">We go beyond recycling to deliver exceptional value through innovation, quality, and customer-focused service.</p>
+            
+            <div class="features-grid">
+                <div class="feature-card animate delay-2">
+                    <div class="feature-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3>Premium Quality</h3>
+                    <p>All our products undergo rigorous quality testing to ensure they meet international standards for purity, consistency, and performance.</p>
+                </div>
+
+                <div class="feature-card animate delay-3">
+                    <div class="feature-icon">
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                    <h3>Competitive Pricing</h3>
+                    <p>Our efficient processes allow us to offer the best prices in the market without compromising on quality or service.</p>
+                </div>
+
+                <div class="feature-card animate delay-4">
+                    <div class="feature-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>Eco-Friendly</h3>
+                    <p>We're committed to environmental sustainability through responsible recycling practices and carbon footprint reduction.</p>
+                </div>
+
+                <div class="feature-card animate delay-2">
+                    <div class="feature-icon">
+                        <i class="fas fa-shipping-fast"></i>
+                    </div>
+                    <h3>Fast Delivery</h3>
+                    <p>Our strategic location and logistics network ensure timely delivery across Nepal and to international markets.</p>
+                </div>
+
+                <div class="feature-card animate delay-3">
+                    <div class="feature-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>Advanced Technology</h3>
+                    <p>We invest in cutting-edge recycling technology to ensure superior product consistency and processing efficiency.</p>
+                </div>
+
+                <div class="feature-card animate delay-4">
+                    <div class="feature-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Expert Support</h3>
+                    <p>Our team of recycling specialists provides personalized assistance and technical support for all your needs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+        <div class="container">
+            <h2 class="section-title text-center animate">Get In Touch</h2>
+            <p class="text-center animate delay-1" style="max-width: 800px; margin: 0 auto 3rem;">Ready to discuss your recycled plastic needs? Contact us today or place your order directly.</p>
+            
+            <!-- Success Message -->
+            <div class="success-message" id="successMessage">
+                <i class="fas fa-check-circle" style="font-size: 2rem; margin-bottom: 1rem;"></i>
+                <h3>Thank you for your submission!</h3>
+                <p>We've received your request and will get back to you within 24 hours.</p>
+            </div>
+            
+            <!-- Contact Info -->
+            <div class="contact-info-grid">
+                <div class="contact-item animate delay-2">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <h3>Address</h3>
+                        <p>Madhuwan 6, Bardiya, Nepal</p>
+                    </div>
+                </div>
+
+                <div class="contact-item animate delay-3">
+                    <i class="fas fa-phone"></i>
+                    <div>
+                        <h3>Phone</h3>
+                        <p><a href="tel:+977 XXXXXXXXXX">+977 9849922343</a></p>
+                    </div>
+                </div>
+
+                <div class="contact-item animate delay-4">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <h3>Email</h3>
+                        <p><a href="mailto:ctrecyclingindustry@gmail.com">ctrecyclingindustry@gmail.com</a></p>
+                    </div>
+                </div>
+
+                <div class="contact-item animate delay-2">
+                    <i class="fas fa-clock"></i>
+                    <div>
+                        <h3>Business Hours</h3>
+                        <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
+                    </div>
+                </div>
+
+                <div class="contact-item animate delay-3">
+                    <i class="fab fa-whatsapp"></i>
+                    <div>
+                        <h3>WhatsApp</h3>
+                        <p><a href="https://wa.me/977 9849922343">+977 9849922343 </a></p>
+                    </div>
+                </div>
+
+                <div class="contact-item animate delay-4">
+                    <i class="fas fa-globe"></i>
+                    <div>
+                        <h3>Website</h3>
+                        <p><a href="https://www.ctplasticindustries.com" target="_blank">www.ctplasticindustries.com</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Order Form -->
+            <div class="order-section">
+                <h3 class="animate delay-2"><i class="fas fa-shopping-cart"></i> Place Your Order</h3>
+                <div class="order-form-container animate delay-3">
+                    <form id="orderForm" action="https://formspree.io/f/xwpbjvoy" method="POST">
+                        <input type="hidden" name="_subject" value="New Order Request from CT Plastic Recycling Industry Pvt. Ltd.">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="customerName">Company/Customer Name *</label>
+                                <input type="text" id="customerName" name="customerName" required>
+                                <div class="error-message" id="nameError">Please enter your name</div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="customerEmail">Email Address *</label>
+                                <input type="email" id="customerEmail" name="customerEmail" required>
+                                <div class="error-message" id="emailError">Please enter a valid email</div>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="customerPhone">Phone Number *</label>
+                                <input type="tel" id="customerPhone" name="customerPhone" required>
+                                <div class="error-message" id="phoneError">Please enter your phone number</div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="customerAddress">Delivery Address *</label>
+                                <input type="text" id="customerAddress" name="customerAddress" required>
+                                <div class="error-message" id="addressError">Please enter your address</div>
+                            </div>
+                        </div>
+
+                        <!-- Product Selection -->
+                        <div class="product-selection" id="productSelection">
+                            <h4><i class="fas fa-box-open"></i> Select Products</h4>
+                            <div class="product-item" id="productItem1">
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="product1">Product Type *</label>
+                                        <select id="product1" name="products[0][type]" required>
+                                            <option value="">Select a product</option>
+                                            <option value="PET Flakes">Recycled PET Plastic Flakes</option>
+                                            <option value="PET Pellets">Recycled PET Plastic Pellets</option>
+                                            <option value="Bottle Preforms">PET Bottle Preforms</option>
+                                            <option value="Custom Product">Custom Product (Specify in notes)</option>
+                                        </select>
+                                        <div class="error-message" id="product1Error">Please select a product</div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="unitType1">Unit Type *</label>
+                                        <select id="unitType1" name="products[0][unitType]" required>
+                                            <option value="">Select unit type</option>
+                                            <option value="kg">Kilograms (kg)</option>
+                                            <option value="pieces">Pieces</option>
+                                            <option value="tons">Metric Tons</option>
+                                        </select>
+                                        <div class="error-message" id="unitType1Error">Please select a unit type</div>
+                                    </div>
+                                </div>
+
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="quantity1" id="quantityLabel1">Quantity *</label>
+                                        <input type="number" id="quantity1" name="products[0][quantity]" min="1" required>
+                                        <div class="error-message" id="quantity1Error">Please enter a valid quantity</div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="budget1">Budget Range *</label>
+                                        <select id="budget1" name="products[0][budget]" required>
+                                            <option value="">Select budget range</option>
+                                            <option value="Under NPR 50,000">Under NPR 50,000</option>
+                                            <option value="NPR 50,000 - 2,00,000">NPR 50,000 - 2,00,000</option>
+                                            <option value="NPR 2,00,000 - 5,00,000">NPR 2,00,000 - 5,00,000</option>
+                                            <option value="Above NPR 5,00,000">Above NPR 5,00,000</option>
+                                            <option value="Negotiable">Negotiable</option>
+                                        </select>
+                                        <div class="error-message" id="budget1Error">Please select a budget range</div>
+                                    </div>
+                                </div>
+
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="deliveryDate1">Delivery Date *</label>
+                                        <input type="date" id="deliveryDate1" name="products[0][deliveryDate]" required>
+                                        <div class="error-message" id="delivery1Error">Please select a delivery date</div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="urgency1">Urgency Level *</label>
+                                        <select id="urgency1" name="products[0][urgency]" required>
+                                            <option value="">Select urgency level</option>
+                                            <option value="Standard (2-4 weeks)">Standard (2-4 weeks)</option>
+                                            <option value="Express (1-2 weeks)">Express (1-2 weeks)</option>
+                                            <option value="Urgent (3-5 days)">Urgent (3-5 days)</option>
+                                            <option value="Immediate (1-2 days)">Immediate (1-2 days)</option>
+                                        </select>
+                                        <div class="error-message" id="urgency1Error">Please select an urgency level</div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="specs1">Product Specifications</label>
+                                    <textarea id="specs1" name="products[0][specs]" placeholder="Any special requirements for this product (color, purity, packaging, etc.)..."></textarea>
+                                </div>
+
+                                <button type="button" class="remove-product" onclick="removeProduct(1)" style="display: none;" aria-label="Remove Product">
+                                    <i class="fas fa-trash"></i> Remove Product
+                                </button>
+                            </div>
+                        </div>
+
+                        <button type="button" class="add-product-btn" id="addProductBtn" aria-label="Add Another Product">
+                            <i class="fas fa-plus-circle"></i> Add Another Product
+                        </button>
+
+                        <!-- Additional Information -->
+                        <div class="form-group">
+                            <label for="paymentTerms">Payment Terms *</label>
+                            <select id="paymentTerms" name="paymentTerms" required>
+                                <option value="">Select payment method</option>
+                                <option value="Bank Transfer">Bank Transfer</option>
+                                <option value="Cash on Delivery">Cash on Delivery</option>
+                                <option value="Credit Terms">Credit Terms (for approved customers)</option>
+                                <option value="Letter of Credit">Letter of Credit</option>
+                                <option value="Other">Other (Specify in notes)</option>
+                            </select>
+                            <div class="error-message" id="paymentError">Please select payment terms</div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="orderNotes">Additional Order Notes</label>
+                            <textarea id="orderNotes" name="orderNotes" placeholder="Any additional information about your order (special requirements, certifications needed, etc.)..."></textarea>
+                        </div>
+
+                        <div class="form-actions">
+                            <button type="submit" class="submit-btn" aria-label="Submit Order">
+                                <i class="fas fa-paper-plane"></i> Submit Order
+                            </button>
+                            <button type="button" class="quote-btn" id="requestQuoteBtn" aria-label="Request Quote">
+                                <i class="fas fa-file-invoice-dollar"></i> Request Quote
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+                <p class="mandatory-note">* Fields marked with an asterisk are mandatory for placing an order or requesting a quote.</p>
+            </div>
+
+            <!-- Quick Contact -->
+            <div class="quick-contact animate delay-4">
+                <h3><i class="fas fa-headset"></i> Need Immediate Assistance?</h3>
+                <form id="quickContactForm" action="https://formspree.io/f/mblyedoe" method="POST">
+                    <input type="hidden" name="_subject" value="Quick Contact Inquiry from  Recycling Industry">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="quickName">Your Name *</label>
+                            <input type="text" id="quickName" name="name" required>
+                            <div class="error-message" id="quickNameError">Please enter your name</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="quickEmail">Your Email *</label>
+                            <input type="email" id="quickEmail" name="email" required>
+                            <div class="error-message" id="quickEmailError">Please enter a valid email</div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="quickMessage">Your Message *</label>
+                        <textarea id="quickMessage" name="message" required></textarea>
+                        <div class="error-message" id="quickMessageError">Please enter your message</div>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;" aria-label="Send Message">
+                        <i class="fas fa-paper-plane"></i> Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="animate delay-2">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fas fa-recycle"></i>
+                    CT Plastic Recycling Industry Pvt. Ltd.
+                </div>
+                <p>Leading the future of sustainable plastic recycling in Nepal</p>
+                
+                <div class="footer-contact">
+                    <a href="tel:+977-XXX-XXXXXXX"><i class="fas fa-phone"></i> +977 9849922343</a>
+                    <a href="mailto:info@ctplasticindustries.com"><i class="fas fa-envelope"></i> ctrecyclingindustry@gmail.com</a>
+                    <a href="#"><i class="fas fa-map-marker-alt"></i> Madhuwan 6, Bardiya, Nepal</a>
+                </div>
+                
+                <div class="social-links">
+                    <a href="https://www.facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.youtube.com" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+                
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#products">Products</a>
+                    <a href="#features">Features</a>
+                    <a href="#contact">Contact</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+                
+                <p class="copyright">© 2025 CT Plastic Recycling Industry Pvt Ltd. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#home" id="backToTop" class="btn btn-primary btn-icon" aria-label="Back to top" style="position: fixed; bottom: 30px; right: 30px; display: none;">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenu = document.getElementById('mobileMenu');
+        const navLinks = document.getElementById('navLinks');
+
+        mobileMenu.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            mobileMenu.innerHTML = navLinks.classList.contains('active') 
+                ? '<i class="fas fa-times"></i>' 
+                : '<i class="fas fa-bars"></i>';
+        });
+
+        // Close mobile menu when clicking a link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                mobileMenu.innerHTML = '<i class="fas fa-bars"></i>';
+            });
+        });
+
+        // Header scroll effect
+        window.addEventListener('scroll', () => {
+            const header = document.getElementById('header');
+            const backToTop = document.getElementById('backToTop');
+            
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+                backToTop.style.display = 'flex';
+            } else {
+                header.classList.remove('scrolled');
+                backToTop.style.display = 'none';
+            }
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Product form functionality
+        let productCount = 1;
+        const addProductBtn = document.getElementById('addProductBtn');
+        const productSelection = document.getElementById('productSelection');
+
+        addProductBtn.addEventListener('click', () => {
+            productCount++;
+            const newProductItem = document.createElement('div');
+            newProductItem.className = 'product-item';
+            newProductItem.id = `productItem${productCount}`;
+            newProductItem.innerHTML = `
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="product${productCount}">Product Type *</label>
+                        <select id="product${productCount}" name="products[${productCount-1}][type]" required>
+                            <option value="">Select a product</option>
+                            <option value="PET Flakes">Recycled PET Plastic Flakes</option>
+                            <option value="PET Pellets">Recycled PET Plastic Pellets</option>
+                            <option value="Bottle Preforms">PET Bottle Preforms</option>
+                            <option value="Custom Product">Custom Product (Specify in notes)</option>
+                        </select>
+                        <div class="error-message" id="product${productCount}Error">Please select a product</div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="unitType${productCount}">Unit Type *</label>
+                        <select id="unitType${productCount}" name="products[${productCount-1}][unitType]" required>
+                            <option value="">Select unit type</option>
+                            <option value="kg">Kilograms (kg)</option>
+                            <option value="pieces">Pieces</option>
+                            <option value="tons">Metric Tons</option>
+                        </select>
+                        <div class="error-message" id="unitType${productCount}Error">Please select a unit type</div>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="quantity${productCount}" id="quantityLabel${productCount}">Quantity *</label>
+                        <input type="number" id="quantity${productCount}" name="products[${productCount-1}][quantity]" min="1" required>
+                        <div class="error-message" id="quantity${productCount}Error">Please enter a valid quantity</div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="budget${productCount}">Budget Range *</label>
+                        <select id="budget${productCount}" name="products[${productCount-1}][budget]" required>
+                            <option value="">Select budget range</option>
+                            <option value="Under $1,000">Under $1,000</option>
+                            <option value="$1,000 - $5,000">$1,000 - $5,000</option>
+                            <option value="$5,000 - $10,000">$5,000 - $10,000</option>
+                            <option value="Above $10,000">Above $10,000</option>
+                            <option value="Negotiable">Negotiable</option>
+                        </select>
+                        <div class="error-message" id="budget${productCount}Error">Please select a budget range</div>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="deliveryDate${productCount}">Delivery Date *</label>
+                        <input type="date" id="deliveryDate${productCount}" name="products[${productCount-1}][deliveryDate]" required>
+                        <div class="error-message" id="delivery${productCount}Error">Please select a delivery date</div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="urgency${productCount}">Urgency Level *</label>
+                        <select id="urgency${productCount}" name="products[${productCount-1}][urgency]" required>
+                            <option value="">Select urgency level</option>
+                            <option value="Standard (2-4 weeks)">Standard (2-4 weeks)</option>
+                            <option value="Express (1-2 weeks)">Express (1-2 weeks)</option>
+                            <option value="Urgent (3-5 days)">Urgent (3-5 days)</option>
+                            <option value="Immediate (1-2 days)">Immediate (1-2 days)</option>
+                        </select>
+                        <div class="error-message" id="urgency${productCount}Error">Please select an urgency level</div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="specs${productCount}">Product Specifications</label>
+                    <textarea id="specs${productCount}" name="products[${productCount-1}][specs]" placeholder="Any special requirements for this product (color, purity, packaging, etc.)..."></textarea>
+                </div>
+
+                <button type="button" class="remove-product" onclick="removeProduct(${productCount})" aria-label="Remove Product">
+                    <i class="fas fa-trash"></i> Remove Product
+                </button>
+            `;
+            productSelection.appendChild(newProductItem);
+            
+            // Set minimum date for new delivery date field
+            const today = new Date().toISOString().split('T')[0];
+            document.getElementById(`deliveryDate${productCount}`).min = today;
+            
+            // Add event listener for unit type change
+            document.getElementById(`unitType${productCount}`).addEventListener('change', function() {
+                const label = document.getElementById(`quantityLabel${productCount}`);
+                label.textContent = this.value === 'kg' ? 'Quantity (kg) *' : 
+                                    this.value === 'pieces' ? 'Quantity (pieces) *' : 
+                                    'Quantity (tons) *';
+            });
+            
+            // Show remove button on first product when adding second
+            if (productCount === 2) {
+                document.querySelector('#productItem1 .remove-product').style.display = 'block';
+            }
+        });
+
+        // Global function for remove product
+        window.removeProduct = (id) => {
+            const productItem = document.getElementById(`productItem${id}`);
+            if (productItem) {
+                productItem.remove();
+                
+                // Hide remove button on first product if only one remains
+                if (productCount === 2) {
+                    document.querySelector('#productItem1 .remove-product').style.display = 'none';
+                }
+                productCount--;
+            }
+        };
+
+        // Set minimum date for delivery date fields and unit type listener
+        document.addEventListener('DOMContentLoaded', function() {
+            const today = new Date().toISOString().split('T')[0];
+            document.getElementById('deliveryDate1').min = today;
+            
+            // Add event listener for unit type change on first product
+            document.getElementById('unitType1').addEventListener('change', function() {
+                const label = document.getElementById('quantityLabel1');
+                label.textContent = this.value === 'kg' ? 'Quantity (kg) *' : 
+                                  this.value === 'pieces' ? 'Quantity (pieces) *' : 
+                                  'Quantity (tons) *';
+            });
+        });
+
+        // Form validation for order form
+        function validateOrderForm() {
+            let isValid = true;
+            
+            // Validate customer info
+            const name = document.getElementById('customerName');
+            const email = document.getElementById('customerEmail');
+            const phone = document.getElementById('customerPhone');
+            const address = document.getElementById('customerAddress');
+            const payment = document.getElementById('paymentTerms');
+            
+            if (!name.value.trim()) {
+                showError(name, 'nameError', 'Please enter your name');
+                isValid = false;
+            } else {
+                clearError(name, 'nameError');
+            }
+            
+            if (!email.value.trim() || !isValidEmail(email.value)) {
+                showError(email, 'emailError', 'Please enter a valid email');
+                isValid = false;
+            } else {
+                clearError(email, 'emailError');
+            }
+            
+            if (!phone.value.trim()) {
+                showError(phone, 'phoneError', 'Please enter your phone number');
+                isValid = false;
+            } else {
+                clearError(phone, 'phoneError');
+            }
+            
+            if (!address.value.trim()) {
+                showError(address, 'addressError', 'Please enter your address');
+                isValid = false;
+            } else {
+                clearError(address, 'addressError');
+            }
+            
+            if (!payment.value) {
+                showError(payment, 'paymentError', 'Please select payment terms');
+                isValid = false;
+            } else {
+                clearError(payment, 'paymentError');
+            }
+            
+            // Validate each product
+            for (let i = 1; i <= productCount; i++) {
+                const productItem = document.getElementById(`productItem${i}`);
+                if (productItem) {
+                    const product = document.getElementById(`product${i}`);
+                    const unitType = document.getElementById(`unitType${i}`);
+                    const quantity = document.getElementById(`quantity${i}`);
+                    const budget = document.getElementById(`budget${i}`);
+                    const deliveryDate = document.getElementById(`deliveryDate${i}`);
+                    const urgency = document.getElementById(`urgency${i}`);
+                    
+                    if (!product.value) {
+                        showError(product, `product${i}Error`, 'Please select a product');
+                        isValid = false;
+                    } else {
+                        clearError(product, `product${i}Error`);
+                    }
+                    
+                    if (!unitType.value) {
+                        showError(unitType, `unitType${i}Error`, 'Please select a unit type');
+                        isValid = false;
+                    } else {
+                        clearError(unitType, `unitType${i}Error`);
+                    }
+                    
+                    if (!quantity.value || quantity.value <= 0) {
+                        showError(quantity, `quantity${i}Error`, 'Please enter a valid quantity');
+                        isValid = false;
+                    } else {
+                        clearError(quantity, `quantity${i}Error`);
+                    }
+                    
+                    if (!budget.value) {
+                        showError(budget, `budget${i}Error`, 'Please select a budget range');
+                        isValid = false;
+                    } else {
+                        clearError(budget, `budget${i}Error`);
+                    }
+                    
+                    if (!deliveryDate.value) {
+                        showError(deliveryDate, `delivery${i}Error`, 'Please select a delivery date');
+                        isValid = false;
+                    } else {
+                        clearError(deliveryDate, `delivery${i}Error`);
+                    }
+                    
+                    if (!urgency.value) {
+                        showError(urgency, `urgency${i}Error`, 'Please select an urgency level');
+                        isValid = false;
+                    } else {
+                        clearError(urgency, `urgency${i}Error`);
+                    }
+                }
+            }
+            
+            if (!isValid) {
+                alert('You have not filled all required fields.');
+            }
+            
+            return isValid;
+        }
+
+        // Form validation for quick contact form
+        const quickContactForm = document.getElementById('quickContactForm');
+        quickContactForm.addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            const name = document.getElementById('quickName');
+            const email = document.getElementById('quickEmail');
+            const message = document.getElementById('quickMessage');
+            let isValid = true;
+            
+            if (!name.value.trim()) {
+                showError(name, 'quickNameError', 'Please enter your name');
+                isValid = false;
+            } else {
+                clearError(name, 'quickNameError');
+            }
+            
+            if (!email.value.trim() || !isValidEmail(email.value)) {
+                showError(email, 'quickEmailError', 'Please enter a valid email');
+                isValid = false;
+            } else {
+                clearError(email, 'quickEmailError');
+            }
+            
+            if (!message.value.trim()) {
+                showError(message, 'quickMessageError', 'Please enter your message');
+                isValid = false;
+            } else {
+                clearError(message, 'quickMessageError');
+            }
+            
+            if (!isValid) {
+                alert('You have not filled all required fields.');
+                return;
+            }
+            
+            try {
+                const response = await fetch(this.action, {
+                    method: 'POST',
+                    body: new FormData(this),
+                    headers: { 'Accept': 'application/json' }
+                });
+                
+                if (response.ok) {
+                    showSuccessMessage('Message sent successfully! We will get back to you within 24 hours.');
+                    this.reset();
+                    clearError(name, 'quickNameError');
+                    clearError(email, 'quickEmailError');
+                    clearError(message, 'quickMessageError');
+                } else {
+                    alert('Error sending message. Please try again later.');
+                }
+            } catch (error) {
+                alert('Error sending message. Please try again later.');
+            }
+        });
+
+        // Order form submission
+        const orderForm = document.getElementById('orderForm');
+        orderForm.addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            if (validateOrderForm()) {
+                const formData = new FormData(this);
+                const orderData = {};
+                
+                // Collect form data
+                for (let [key, value] of formData.entries()) {
+                    if (key.includes('products')) {
+                        const matches = key.match(/products\[(\d+)\]\[(\w+)\]/);
+                        if (matches) {
+                            const index = matches[1];
+                            const field = matches[2];
+                            if (!orderData.products) orderData.products = [];
+                            if (!orderData.products[index]) orderData.products[index] = {};
+                            orderData.products[index][field] = value;
+                        }
+                    } else {
+                        orderData[key] = value;
+                    }
+                }
+                
+                // Generate order summary
+                let orderSummary = `New Order Request from ${orderData.customerName}\n\n`;
+                orderSummary += `Contact Details:\n`;
+                orderSummary += `Email: ${orderData.customerEmail}\n`;
+                orderSummary += `Phone: ${orderData.customerPhone}\n`;
+                orderSummary += `Address: ${orderData.customerAddress}\n\n`;
+                orderSummary += `Products Ordered:\n`;
+                
+                orderData.products.forEach((product, index) => {
+                    if (product.type && product.quantity && product.budget && product.deliveryDate && product.unitType && product.urgency) {
+                        orderSummary += `${index + 1}. ${product.type}\n`;
+                        orderSummary += `   Quantity: ${product.quantity} ${product.unitType}\n`;
+                        orderSummary += `   Budget: ${product.budget}\n`;
+                        orderSummary += `   Delivery Date: ${product.deliveryDate}\n`;
+                        orderSummary += `   Urgency: ${product.urgency}\n`;
+                        if (product.specs) orderSummary += `   Specifications: ${product.specs}\n`;
+                        orderSummary += `\n`;
+                    }
+                });
+                
+                orderSummary += `Payment Terms: ${orderData.paymentTerms}\n`;
+                if (orderData.orderNotes) orderSummary += `Additional Notes: ${orderData.orderNotes}\n`;
+                
+                formData.append('orderSummary', orderSummary);
+                
+                try {
+                    const response = await fetch(this.action, {
+                        method: 'POST',
+                        body: formData,
+                        headers: { 'Accept': 'application/json' }
+                    });
+                    
+                    if (response.ok) {
+                        showSuccessMessage(`Order submitted successfully!\n\nOrder Summary:\n${orderSummary}`);
+                        this.reset();
+                        while (productCount > 1) {
+                            removeProduct(productCount);
+                        }
+                        document.getElementById('quantityLabel1').textContent = 'Quantity *';
+                        clearFormErrors();
+                    } else {
+                        alert('Error submitting order. Please try again later.');
+                    }
+                } catch (error) {
+                    alert('Error submitting order. Please try again later.');
+                }
+            }
+        });
+
+        // Request Quote button functionality
+        const requestQuoteBtn = document.getElementById('requestQuoteBtn');
+        requestQuoteBtn.addEventListener('click', async () => {
+            if (validateOrderForm()) {
+                const formData = new FormData(orderForm);
+                formData.set('_subject', 'Quote Request from CT Plastic Recycling Industry Pvt. Ltd.');
+                const orderData = {};
+                
+                for (let [key, value] of formData.entries()) {
+                    if (key.includes('products')) {
+                        const matches = key.match(/products\[(\d+)\]\[(\w+)\]/);
+                        if (matches) {
+                            const index = matches[1];
+                            const field = matches[2];
+                            if (!orderData.products) orderData.products = [];
+                            if (!orderData.products[index]) orderData.products[index] = {};
+                            orderData.products[index][field] = value;
+                        }
+                    } else {
+                        orderData[key] = value;
+                    }
+                }
+                
+                let quoteSummary = `New Quote Request from ${orderData.customerName}\n\n`;
+                quoteSummary += `Contact Details:\n`;
+                quoteSummary += `Email: ${orderData.customerEmail}\n`;
+                quoteSummary += `Phone: ${orderData.customerPhone}\n`;
+                quoteSummary += `Address: ${orderData.customerAddress}\n\n`;
+                quoteSummary += `Products Requested:\n`;
+                
+                orderData.products.forEach((product, index) => {
+                    if (product.type && product.quantity && product.budget && product.deliveryDate && product.unitType && product.urgency) {
+                        quoteSummary += `${index + 1}. ${product.type}\n`;
+                        quoteSummary += `   Quantity: ${product.quantity} ${product.unitType}\n`;
+                        quoteSummary += `   Budget: ${product.budget}\n`;
+                        quoteSummary += `   Delivery Date: ${product.deliveryDate}\n`;
+                        quoteSummary += `   Urgency: ${product.urgency}\n`;
+                        if (product.specs) orderSummary += `   Specifications: ${product.specs}\n`;
+                        quoteSummary += `\n`;
+                    }
+                });
+                
+                quoteSummary += `Payment Terms: ${orderData.paymentTerms}\n`;
+                if (orderData.orderNotes) quoteSummary += `Additional Notes: ${orderData.orderNotes}\n`;
+                
+                formData.set('orderSummary', quoteSummary);
+                
+                try {
+                    const response = await fetch(orderForm.action, {
+                        method: 'POST',
+                        body: formData,
+                        headers: { 'Accept': 'application/json' }
+                    });
+                    
+                    if (response.ok) {
+                        showSuccessMessage(`Quote request submitted successfully!\n\nQuote Summary:\n${quoteSummary}`);
+                        orderForm.reset();
+                        while (productCount > 1) {
+                            removeProduct(productCount);
+                        }
+                        document.getElementById('quantityLabel1').textContent = 'Quantity *';
+                        clearFormErrors();
+                    } else {
+                        alert('Error submitting quote request. Please try again later.');
+                    }
+                } catch (error) {
+                    alert('Error submitting quote request. Please try again later.');
+                }
+            }
+        });
+
+        // Helper functions for form validation
+        function isValidEmail(email) {
+            const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return re.test(email);
+        }
+
+        function showError(input, errorId, message) {
+            const formGroup = input.closest('.form-group');
+            formGroup.classList.add('error');
+            const errorElement = document.getElementById(errorId);
+            errorElement.textContent = message;
+            errorElement.style.display = 'block';
+        }
+
+        function clearError(input, errorId) {
+            const formGroup = input.closest('.form-group');
+            formGroup.classList.remove('error');
+            const errorElement = document.getElementById(errorId);
+            errorElement.style.display = 'none';
+        }
+
+        function clearFormErrors() {
+            document.querySelectorAll('.form-group.error').forEach(group => {
+                group.classList.remove('error');
+                const errorElement = group.querySelector('.error-message');
+                if (errorElement) errorElement.style.display = 'none';
+            });
+        }
+
+        function showSuccessMessage(message) {
+            const successMessage = document.getElementById('successMessage');
+            successMessage.style.display = 'block';
+            successMessage.scrollIntoView({ behavior: 'smooth' });
+            setTimeout(() => {
+                successMessage.style.display = 'none';
+            }, 8000);
+        }
+
+        // Animation on scroll
+        document.addEventListener('DOMContentLoaded', () => {
+            const animateElements = document.querySelectorAll('.animate, .animate-up, .animate-left');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.animationPlayState = 'running';
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1 });
+            
+            animateElements.forEach(element => {
+                observer.observe(element);
+            });
+        });
+    </script>
+</body>
+</html>
